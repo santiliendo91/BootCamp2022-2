@@ -15,9 +15,6 @@ public class FactoryBrowser {
             case "headless":
                 browser=new Headless();
                 break;
-            case "grid":
-                browser=new Grid();
-                break;
             default:
                 browser= new Firefox();
                 break;

@@ -29,6 +29,4 @@ public class Session {
     public void acceptAlert() {
         browser.switchTo().alert().accept();
     }
-
-
 }

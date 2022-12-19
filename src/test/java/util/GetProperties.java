@@ -13,7 +13,7 @@ public class GetProperties {
 
      private GetProperties(){
          Properties properties = new Properties();
-         String nameFile="yopmail.properties";
+         String nameFile="todoly.properties";
          InputStream inputStream = getClass().getClassLoader().getResourceAsStream(nameFile);
          if(inputStream!= null){
              try {

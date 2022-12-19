@@ -1,7 +1,6 @@
 package control;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 
 public class TextBox extends Control{
     public TextBox(By locator) {
@@ -18,16 +17,5 @@ public class TextBox extends Control{
         this.control.clear();
         this.control.sendKeys(value);
     }
-    public void selectText(String value){
-        this.find();
-        this.control.sendKeys(Keys.chord(Keys.CONTROL, "a"));
-        this.control.sendKeys(" ");
-    }
-
-    public void sendTab(){
-        this.find();
-        this.control.sendKeys(Keys.chord(Keys.TAB));
-    }
-
 
 }
